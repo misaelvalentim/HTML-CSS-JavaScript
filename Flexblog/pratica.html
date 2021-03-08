@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            background: blue;
+        }
+        header {
+            background-color: yellow;
+        }
+        header li {
+            list-style: none;
+        }
+        header a {
+            text-decoration: none;
+            color: blue;
+        }
+        header, .menu{
+            max-width: 100%;
+            display: flex;
+            margin: 0 auto;
+            padding: 15px 0;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+        .menu-logo {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin: 0 10px;
+        }
+        .menu-nav a {
+            font-size: 1.25em;
+            display: block;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu-logo">
+            <p>Meu logo</p>
+        </div>
+        <nav class="menu-geral">
+            <div class="menu-nav">
+                <ul class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+        <div><h1>Sobre nós</h1></div>
+        <img src="images/img-1.jpg" alt="">
+    </section>
+    <section id="sobre">
+        <h1>Sobre nós</h1>
+        <img src="images/img-1.jpg" alt="">
+    </section>
+    <section id="projetos">
+        <h1>Meus projetos</h1>
+        <img src="images/img-1.jpg" alt="">
+    </section>
+    <section id="contato">
+        <h1>Contato</h1>
+        <img src="images/img-1.jpg" alt="">
+    </section>
+</body>
+</html>
