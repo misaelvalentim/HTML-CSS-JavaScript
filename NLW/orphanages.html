@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localize um orfanato | Happy</title>
+    <link rel="icon" href="/pubilc/images/logo-icon.png" />
+    <!--Link para a inserção do mapa gratuito by: Leaflet-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+
+    <!--Estilização do meu conteudo HTML-->
+    <link rel="stylesheet" href="/pubilc/css/style.css">
+    <link rel="stylesheet" href="/pubilc/css/animation.css">
+    <link rel="stylesheet" href="/pubilc/css/orphanages.page.css">
+    <!--Link para ligar uma fonte de letras do google para meu conteúdo HTML-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="page-orphanages">
+      <aside class="animate-right">
+        <header>
+          <a href="http://127.0.0.1:5500/index.html#" alt="Pagina-inicial">
+            <img src="/pubilc/images/map-marker.svg" alt="Happy" />
+          </a>
+
+          <h2>Escolha um orfanato no mapa</h2>
+
+          <p>Muitas crianças estão esperando sua visita :)</p>
+        </header>
+        <footer>
+          <p><strong>São Paulo</strong></p>
+          <p>Casa Verde</p>
+        </footer>
+      </aside>
+      <div id="mapid"></div>
+      <a href="create-orphanage.html" class="create-orphanage" title="Cadastre um orfanato">
+        <img src="/pubilc/images/plus.svg" alt="Criar orfanato">
+      </a>
+    </div>
+
+    <script src="/page-orphanages.js"></script>
+  </body>
+</html>
