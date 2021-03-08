@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+/*Formatação do box*/
+.form {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: -webkit-linear-gradient(#9c4bbd, white);
+    transition: all 1s ease-in-out;
+}
+.form-box {
+    line-height: 1.5em;
+    text-align: center;
+    margin: 0 1em;
+    border: 3px solid white;
+    padding: 0 1em 1em;
+    font-size: 1.5em;
+    box-shadow: 2pt 5pt 10pt 7pt rgba(0, 0, 0, 0.431);
+}
+h1 {
+    font-size: 2em;
+}
+.subtitulo {
+    font-size: 0.7em;
+    color: gray;
+}
+/*Formatação dos inputs*/
+
+input {
+    width: 15em;
+    padding: 0.1em;
+    border: 2px solid black;
+    transition:all 0.5s ease;
+}
+section > form > p > .login-ready {
+    text-decoration: none;
+}
+
+#checkbox {
+    width: initial;
+}
+input:hover {
+    width: 20em;
+}
+#background:hover {
+    width: 15em;
+    background-color: green;
+    color: white;
+    font-size: 0.7em;
+}
+#voltar:hover {
+    width: 15em;
+    background-color: red;
+    color: white;
+    font-size: 0.7em;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 450px) {
+    .form-box, p, input{
+        line-height: initial;
+        display: block;
+        text-align: left;   
+    }
+    input:hover {
+        width: 17em;
+    }
+    #checkbox {
+        display: inline;
+    }
+}
+@media only screen and (min-width: 831px) {
+    .subtitulo {
+        line-height: 3em;
+    }
+}

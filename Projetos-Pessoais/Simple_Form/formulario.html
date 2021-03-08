@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <section class="form">
+      <form action="#" method="get" class="form-box">
+        <div class="cabecario">
+          <img src="" alt="" />
+          <h1>Setup your account</h1>
+        </div>
+        <p class="subtitulo">
+          Make sure to use a valid email address, you'll need to verify it
+          before you can send any campaigns.
+        </p>
+        <p>
+          <label for="nome"
+            >Name
+            <input type="text" id="nome" name="nome" required />
+          </label>
+        </p>
+        <p>
+          <label for="email"
+            >Email
+            <input type="email" id="email" name="email" required />
+          </label>
+        </p>
+        <p>
+          <label for="usuario"
+            >Username
+            <input type="text" id="usuario" name="username" required />
+          </label>
+        </p>
+        <p>
+          <label for="password"
+            >Password
+            <input type="password" id="password" name="password" required />
+          </label>
+        </p>
+        <p>
+          <label for="company"
+            >Company
+            <input type="text" id="company" name="company" required />
+          </label>
+        </p>
+        <p>
+          <label for="country"
+            >Country
+            <select name="country" id="country" required>
+              <option value="USA">USA</option>
+              <option value="BRA" selected>BR</option>
+              <option value="UKG">UK</option>
+              <option value="AUS">AUS</option>
+              <option value="GBR">GBR</option>
+            </select>
+          </label>
+        </p>
+        <p class="termos" style="font-size: 0.7em">
+          <input
+            type="checkbox"
+            name="checkbox"
+            id="checkbox"
+          />
+          I accept the <a href="#" style="color: green">Terms of Use</a> &
+          <a href="#" style="color: green">Privacy Policy</a>.
+        </p>
+        <p>
+          <input type="submit" value="Login" id="background" />
+          <input type="button" value="Cancel" id="voltar" onclick="Voltar()" />
+        </p>
+        <p>
+          <a class="login-ready" href="#login">Already have a Login</a>
+        </p>
+      </form>
+    </section>
+    <script>
+      function Voltar() {
+        voltar = document.getElementById("Voltar");
+        if (voltar == onclick) {
+          window.location = "#home";
+        }
+      }
+    </script>
+  </body>
+</html>
