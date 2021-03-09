@@ -1,0 +1,31 @@
+body {
+  font: normal 12pt black;
+}
+header {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  color: white;
+  font: normal 15pt black;
+}
+section {
+  width: 45em;
+  background-color: white;
+  border-radius: 20px;
+  margin: auto;
+  text-align: center;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.37);
+}
+footer {
+  color: white;
+  text-align: center;
+  font-style: italic;
+}
+img {
+  width: 80%;
+  border-radius: 50%;
+}
+#msg {
+  font: normal 15pt black;
+  padding: 5px;
+}
